@@ -22,12 +22,12 @@ if(edad >=18){
     let seleccionImporte = prompt("seleccione importe de $10000 hasta $1000000 max.");
     
     //seleccion de importe
-    if(seleccionImporte >= 10000 && seleccionImporte <= 1000000){
+    if(!isNaN(seleccionImporte >= 10000 && seleccionImporte <= 1000000)){
         let seleccionCuotas = parseInt(prompt("seleccione la canitad de cuotas 6 , 9 , 12 , 15"));
         let cuotas6 = seleccionImporte / 6
         let cuotas9 = seleccionImporte / 9
         let cuotas12 = (seleccionImporte / 12) * 1.5
-        let cuotas15 = (seleccionImporte / 12) * 1.75
+        let cuotas15 = (seleccionImporte / 15) * 1.75
 
         //seleccion de cuotas
         if(seleccionCuotas == 6 || seleccionCuotas == 9 || seleccionCuotas == 12 || seleccionCuotas == 15){
