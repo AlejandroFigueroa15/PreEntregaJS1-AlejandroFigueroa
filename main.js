@@ -14,9 +14,6 @@ while(lastName ===""){
 //const client1 = client (nombre,lastName);
 alert("Hola "+ nombre + " " + lastName + "!te damos la bienvenida a nuestro simulador de préstamos");
 
-
-
-
 let age = parseInt(prompt("Por favor,ingrese su edad"));
 
 // si la edad es mayor o igual a 18 podra acceder al préstamo
