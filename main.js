@@ -51,35 +51,44 @@ if(age >=18){
                         alert("Cantidad de cuotas ingresadas incorrecto");       
                 }
 
-                //let pregunta = prompt("Desea realizar una nueva consulta? Si / No").toLowerCase();
-                //if(pregunta === "si"){
-                    //loans();   
-                //}else{
-                    //alert("¡Gracias por consultar nuestros servicios!");
-                //}
             }else{
                 alert("Cantidad de cuotas ingresadas incorrecto");
+                let pregunta = prompt("Desea realizar una nueva consulta? Si / No").toLowerCase();
+        if(pregunta === "si"){
+            newLoans();
+        }else{
+            alert("¡Gracias por consultar nuestros servicios!");
+        };
             }
         }else if(selectImport !== Number){
             alert("Monto ingresado invalido");
+            let pregunta = prompt("Desea realizar una nueva consulta? Si / No").toLowerCase();
+            if(pregunta === "si"){
+                newLoans();
+            }else{
+                let pregunta = prompt("Desea realizar una nueva consulta? Si / No").toLowerCase();
+                if(pregunta === "si"){
+                    newLoans();
+                }else{
+                    alert("¡Gracias por consultar nuestros servicios!");
+                }    
+            };
         }
-        
     }
     newLoans();
     let pregunta = prompt("Desea realizar una nueva consulta? Si / No").toLowerCase();
         if(pregunta === "si"){
-            
-        newLoans();
-
+            newLoans();
         }else{
             alert("¡Gracias por consultar nuestros servicios!");
         };
 
+
 }else{
     alert("Disculpe,para solicitar un préstamo debe ser mayor de edad");
+    alert("¡Gracias por consultar nuestros servicios!")
 }
 
-alert("¡Gracias por consultar nuestros servicios!")
 
 
 
