@@ -54,11 +54,11 @@ if(age >=18){
             }else{
                 alert("Cantidad de cuotas ingresadas incorrecto");
                 let pregunta = prompt("Desea realizar una nueva consulta? Si / No").toLowerCase();
-        if(pregunta === "si"){
-            newLoans();
-        }else{
-            alert("¡Gracias por consultar nuestros servicios!");
-        };
+                if(pregunta === "si"){
+                    newLoans();
+                }else{
+                    alert("¡Gracias por consultar nuestros servicios!");
+                };
             }
         }else if(selectImport !== Number){
             alert("Monto ingresado invalido");
